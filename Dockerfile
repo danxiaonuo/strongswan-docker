@@ -137,10 +137,10 @@ RUN set -eux \
 
 
 # 拷贝配置文件
-COPY ./conf/strongswan/config/swanctl.conf /etc/swanctl.conf
-COPY ./conf/strongswan/config/ipsec.secrets /etc/ipsec.secrets
-COPY ./conf/strongswan/config/strongswan.conf /etc/strongswan.conf
-COPY ./conf/strongswan/config/ipsec.d /etc/ipsec.d
+#COPY ./conf/strongswan/config/swanctl.conf /etc/swanctl.conf
+#COPY ./conf/strongswan/config/ipsec.secrets /etc/ipsec.secrets
+#COPY ./conf/strongswan/config/strongswan.conf /etc/strongswan.conf
+#COPY ./conf/strongswan/config/ipsec.d /etc/ipsec.d
 COPY ./conf/strongswan/bin/ovw /usr/local/bin/ovw
 RUN chmod a+x /usr/local/bin/*
 
