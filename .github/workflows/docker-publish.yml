@@ -69,7 +69,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
   
     - name: 构建镜像并发布
-      uses: docker/build-push-action@v2
+      uses: docker/build-push-action@v2.2.1
       with:
         context: .
         file: ./Dockerfile
