@@ -89,26 +89,26 @@ RUN set -eux \
     --enable-eap-mschapv2 \
     --enable-eap-radius \
     --enable-eap-tls \
-	--enable-eap-aka \
-	--enable-eap-aka-3gpp2 \
-	--enable-eap-gtc \
-	--enable-eap-peap \
-	--enable-eap-sim \
-	--enable-eap-sim-file \
-	--enable-eap-simaka-pseudonym \
-	--enable-eap-simaka-reauth \
-	--enable-eap-simaka-sql \
-	--enable-eap-tnc \
-	--enable-eap-ttls \
-	--enable-xauth-eap \
-	--enable-xauth-pam \
-	--enable-dhcp \
+    --enable-eap-aka \
+    --enable-eap-aka-3gpp2 \
+    --enable-eap-gtc \
+    --enable-eap-peap \
+    --enable-eap-sim \
+    --enable-eap-sim-file \
+    --enable-eap-simaka-pseudonym \
+    --enable-eap-simaka-reauth \
+    --enable-eap-simaka-sql \
+    --enable-eap-tnc \
+    --enable-eap-ttls \
+    --enable-xauth-eap \
+    --enable-xauth-pam \
+    --enable-dhcp \
     --enable-farp \
-	--enable-unity \
-	--enable-addrblock \
+    --enable-unity \
+    --enable-addrblock \
     --enable-files \
-	--enable-certexpire \
-	--enable-radattr \
+    --enable-certexpire \
+    --enable-radattr \
     --enable-gcm \
     --enable-md4 \
     --enable-newhope \
@@ -116,13 +116,13 @@ RUN set -eux \
     --enable-openssl \
     --enable-sha3 \
     --enable-shared \
-	--enable-swanctl \
-	--enable-kernel-netlink \
+    --enable-swanctl \
+    --enable-kernel-netlink \
     --disable-aes \
     --disable-des \
     --disable-gmp \
-	--disable-mysql \
-	--disable-ldap \
+    --disable-mysql \
+    --disable-ldap \
     --disable-hmac \
     --disable-ikev1 \
     --disable-md5 \
@@ -163,5 +163,3 @@ ENTRYPOINT ["/entry.sh"]
 
 # 启动命令
 CMD ["/usr/sbin/ipsec", "start", "--nofork"]
-       
-
